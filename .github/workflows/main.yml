@@ -30,7 +30,7 @@ jobs:
         run: npm install --legacy-peer-deps --force
 
       - name: Build Ionic assets
-        run: ionic capacitor build android --prod
+        run: ionic capacitor build android --prod --force
 
       - name: Copy generated assets from Ionic to Capacitor Android platform
         run: npx cap copy android && npx cap update android
