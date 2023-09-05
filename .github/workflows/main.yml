@@ -27,7 +27,7 @@ jobs:
         run: npm install -g @ionic/cli
 
       - name: Install app dependencies
-        run: npm install --legacy-peer-deps
+        run: npm install --legacy-peer-deps --force
 
       - name: Build Ionic assets
         run: ionic capacitor build android --prod
